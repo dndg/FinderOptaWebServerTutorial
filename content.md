@@ -510,12 +510,13 @@ Once we finished these operations, even in this case, the server will call the
 function `sendLEDsStates`, sending as response a JSON containing the state of
 the LEDs of the Finder Opta. We can conclude by saying that using the `/led`
 endpoint the server updates the LEDs and it returns their state. For this
-reason the web page provided by the `/` endpoint calls the server at this path
-allowing the user to interact with the device via its browser, indicating the
-desired state of each LED and clicking the _Apply_ button. In case of success
-the browser will show a confirmation pop-up and the LEDs on the Finder Opta
-will turn on or off as indicated, completing the set of functionalities we
-desired from our Web Server.
+reason the web page provided by the `/` endpoint interacts with the server at
+this path allowing the user to interact with the device via its browser. The
+user can in fact indicate the desired state of each LED and apply the command
+clicking the _Apply_ button. In case of success the browser will show a
+confirmation pop-up and the LEDs on the Finder Opta will turn on or off as
+indicated, completing the set of functionalities we desired from our Web
+Server.
 
 For each endpoint, in case of malformed requests the server will respond
 invoking the `badRequest()` function, while in case of invalid path it will

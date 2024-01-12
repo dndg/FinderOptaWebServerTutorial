@@ -229,7 +229,7 @@ funzione `getHttpMethodAndPath()`:
                 getHttpMethodAndPath(&http, method, path);
 ```
 
-Tale funzione legge i byte della richiesta fino a quando non raggiunge un
+Questa funzione legge i byte della richiesta fino a quando non raggiunge un
 separator, e salva prima il metodo HTTP e poi il path della richiesta, entrambi
 all'interno di un array di `char` null-terminated:
 
@@ -246,7 +246,7 @@ void getHttpMethodAndPath(HttpClient *http, char *method, char *path)
 
 A questo punto il server confronterà metodo e path alle costanti definite in
 precedenza per determinare quali azioni intraprende, sulla base di quanto
-spiegato spiegato nel corso di questo tutorial.
+spiegato nel corso di questo tutorial.
 
 Il codice seguente si occupa dell'endpoint `/`:
 
@@ -511,12 +511,13 @@ Terminate queste operazioni, anche in questo caso, il server chiama la funzione
 `sendLEDsStates`, inviando quindi come risposta un JSON contente lo stato dei
 LED del Finder Opta. Possiamo quindi concludere che tramite l'endpoint `/led`
 il server aggiorna e restituisce lo stato dei LED del dispositivo. Per questo
-motivo, la pagina web restituita dall'endpoint `/` chiama il server a questo
-path permettendo all'utente di interagire con il dispositivo tramite il proprio
-browser, indicando per ciascun LED lo stato desiderato e cliccando il pulsante
-_Apply_. In caso di successo, il browser mostrerà un pop-up di conferma e i LED
-del Finder Opta si accenderanno o spegneranno come specificato, completando il
-set di funzionalità previste per il nostro Web Server.
+motivo, la pagina web restituita dall'endpoint `/` interagisce con il server a
+questo path, consentendo all'utente di interagire con il dispositivo
+direttamente dal proprio browser. L'utente può infatti indicare per ciascun LED
+uno stato desiderato ed applicare il comando cliccando il pulsante _Apply_. In
+caso di successo, il browser mostrerà un pop-up di conferma e i LED del Finder
+Opta si accenderanno o spegneranno come specificato, completando il set di
+funzionalità previste per il nostro Web Server.
 
 Per ciascun endpoint, in caso di richieste malformate il server risponderà
 invocando la funzione `badRequest()`, mentre in caso di path non validi verrà
