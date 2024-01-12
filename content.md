@@ -28,11 +28,12 @@ In the previous examples we showed [how to configure an IP address on the
 Finder
 Opta](https://github.com/dndg/FinderOptaEthernetTutorial/blob/main/content.md)
 and [how to use the Ethernet and HTTP libraries to send `POST` requests to a
-remote HTTP server](https://github.com/dndg/FinderOptaHttpClientTutorial). In
-this tutorial, we will instead instruct the Finder Opta to act as the server:
-the device will receive `POST` or `GET` requests from a client connected via
-Ethernet, and it will read their content in order to provide a response or to
-perform a task.
+remote HTTP
+server](https://github.com/dndg/FinderOptaHttpClientTutorial/blob/main/content.md).
+In this tutorial, we will instead instruct the Finder Opta to act as the
+server: the device will receive `POST` or `GET` requests from a client
+connected via Ethernet, and it will read their content in order to provide a
+response or to perform a task.
 
 ## Goals
 

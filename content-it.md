@@ -28,8 +28,9 @@ Nei precedenti esempi abbiamo mostrato [come configurare un indirizzo IP sul
 Finder
 Opta](https://github.com/dndg/FinderOptaEthernetTutorial/blob/main/content-it.md)
 e [come utilizzare le librerie Ethernet e HTTP per inviare richieste `POST` ad
-un server HTTP](https://github.com/dndg/FinderOptaHttpClientTutorial). In
-questo tutorial, sarà invece il Finder Opta a comportarsi da server: il
+un server
+HTTP](https://github.com/dndg/FinderOptaHttpClientTutorial/blob/main/content-it.md).
+In questo tutorial, sarà invece il Finder Opta a comportarsi da server: il
 dispositivo riceverà richieste `POST` o `GET` da un client connesso via
 Ethernet, e ne leggerà il contenuto per fornire una risposta o compiere
 un'azione.
