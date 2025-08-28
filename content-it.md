@@ -180,7 +180,7 @@ void setup()
 
     info = boardInfo();
     // Check if secure informations are available since MAC Address is among them.
-    if (info->magic = 0xB5)
+    if (info->magic == 0xB5)
     {
         // Assign static IP address.
         Ethernet.begin(info->mac_address, ip);
